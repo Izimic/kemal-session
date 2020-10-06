@@ -130,7 +130,7 @@ module Kemal
         secure: Session.config.secure,
         path: Session.config.path,
         domain: Session.config.domain,
-				samesite: 0,
+				samesite: HTTP::Cookie::SameSite::Strict,
       )
     end
 
